@@ -56,7 +56,7 @@ var ctx;
 img.onload = function() {
     imgW = img.width*scale;
     imgH = img.height*scale;
-    if (imgW > CanvasXSize) { x = CanvasXSize-imgW; } // image larger than canvas
+    if (imgW > CanvasXSize) { x = CanvasXSize-imgW/2; } // image larger than canvas
     if (imgW > CanvasXSize) { clearX = imgW; } // image larger than canvas
     else { clearX = CanvasXSize; }
     if (imgH > CanvasYSize) { clearY = imgH; } // image larger than canvas
