@@ -1,22 +1,50 @@
 /* CSS declarations go here */
+
+
 body {
 		background-color: #0A4400;
-                font-family:"Open Sans";
+    font-family:"Open Sans";
+		color: #fff;
+		padding-top: 20px;
 }
 p {
      font-family:"Open Sans";
+		 color:#ffffff;
+}
+.login{
+margin-left: 50px;
 }
 
-.respond {
- font-family:"Open Sans";
- float: none;
- margin: 5px;
- padding: 15px;
- max-width: auto;
- height: auto;
- border: 0px solid #fff;
-}
 .logo {
   width: 300px;
   height: 100px;
+}
+.toggle-menu {
+	list-style-type: none;
+	color:#d3d300;
+	width:50%;
+
+	height:4em;
+	text-align: center;
+	list-style: none;
+	padding: none;
+
+	font-size: 2em;
+	font-weight: bold;
+}
+.FrontButtons {
+	text-align: center;
+	list-style: none outside none;
+	list-style-type: none;
+}
+.buttons {
+	list-style-type: none;
+	list-style: none;
+}
+.container {
+	margin-left:none;
+}
+#login-buttons{
+
+	font-size: 4em;
 }

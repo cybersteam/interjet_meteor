@@ -27,3 +27,6 @@ accounts-facebook
 pauli:accounts-linkedin
 accounts-github
 bootstrap
+kadira:flow-router
+kadira:blaze-layout
+twbs:bootstrap

@@ -1,36 +1,20 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 
-import './main.html';
+//import './main.html';
+import './layouts/main.html';
+//import '../imports/api/coursedates.js';
 
+//MainLayout template gets the method events - onclick logs to console
+Template.MainLayout.events({
+  'click .toggle-menu': function(){
+    console.log('click');
+    alert('Hey');
 
-import '../imports/startup/accounts-config.js';
-
-
-Template.hello.onCreated(function helloOnCreated() {
-  // counter starts at 0
-  this.counter = new ReactiveVar(0);
+  }
 });
 
-Template.hello.helpers({
-  counter() {
-    return Template.instance().counter.get();
-  },
-});
-
-Template.hello.events({
-  'click button'(event, instance) {
-    // increment the counter when button is clicked
-    instance.counter.set(instance.counter.get() + 1);
-  },
-});
-
-
-
-
-
-
-
+// Animation
 var img = new Image();
 
 // User Variables - customize these to change the image being scrolled, its
@@ -38,7 +22,7 @@ var img = new Image();
 
 img.src = '/logo.png';
 var CanvasXSize = 1500;
-var CanvasYSize = 90;
+var CanvasYSize = 100;
 var speed = 30; //lower is faster
 var scale = 1.05;
 var y = -4.5; //vertical offset

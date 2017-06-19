@@ -1,0 +1,31 @@
+
+
+
+<template name="MainLayout">
+  <header>
+  <p>v0.1</p>
+
+
+    <canvas id="canvas" width="1400px"></canvas>
+	<script src="/client/main.js"></script>
+    <br>
+        {{> loginButtons}}
+        {{#if currentUser}}
+          {{currentUser.profile.login}}
+        {{/if}}
+
+  </header>
+
+
+<main class="buttons">
+    <br>
+    <ul>
+        <li><button class="btn-clients toggle-menu ">Client Zone</button></li>
+        <li><button class="btn-ameta toggle-menu">AMETA Academy</button></li>
+        <li><button class="btn-staff toggle-menu">Staff Zone</button></li>
+    </ul>
+
+</main>
+
+
+</template>
