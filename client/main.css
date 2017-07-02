@@ -1,15 +1,30 @@
 /* CSS declarations go here */
 
-
+/*
+	Primaries
+#2e7d32
+#60ad5e
+#005005
+	Secondaries
+#bcaaa4
+#efdcd5
+#8c7b75
+	Text on P
+#fafafa
+	Text on S
+#ef9a9a
+*/
 body {
-		background-color: #0A4400;
+	/*#0A4400*/
+		background-color: #efdcd5;
     font-family:"Open Sans";
 		color: #fff;
 		padding-top: 20px;
 }
+
 p {
      font-family:"Open Sans";
-		 color:#ffffff;
+		 color:#4286f4;
 }
 .login{
 margin-left: 50px;
@@ -21,30 +36,87 @@ margin-left: 50px;
 }
 .toggle-menu {
 	list-style-type: none;
-	color:#d3d300;
-	width:50%;
-
-	height:4em;
+	color:#8c7b75;
+	width:100%;
+	background-color:  #fafafa;
+	height:2em;
 	text-align: center;
-	list-style: none;
-	padding: none;
+
+	padding: 0 0 0 0;
 
 	font-size: 2em;
 	font-weight: bold;
-}
-.FrontButtons {
-	text-align: center;
-	list-style: none outside none;
-	list-style-type: none;
-}
-.buttons {
-	list-style-type: none;
-	list-style: none;
-}
-.container {
-	margin-left:none;
-}
-#login-buttons{
+	margin-left: -1.7em
 
+
+}
+#front{
+	margin-top: -2em;
+}
+#front li {
+	list-style: none;
+	list-style-type: none;
+	margin-bottom: 1em;
+}
+
+.container {
+	margin-left:0;
+	width:100%;
+	height:4em;
+}
+.foot {
+	width:100%;
+	height:5em;
+	position: absolute;
+	bottom: 0;
+	left:0;
+	background-color: #60ad5e;
+}
+.action {
+	color:#ef9a9a;
+	width:4em;
+	height:4em;
+	border-radius: 50%;
+	background-color: #8c7b75;
+	padding: 0 0 0 1em;
+	position: absolute;
+	bottom:3em;
+	right:2em;
+}
+.head{
+	color:#fafafa;
+	width:100%;
+	height:5em;
+	position: absolute;
+	top: 1.5em;
+	left:0;
+	background-color: #2e7d32;
+	padding: 0 0 0 1em;
+
+}
+.top{
+	width:100%;
+	height:1.5em;
+	position: absolute;
+	top: 0;
+	left:0;
+	background-color: #005005;
+}
+.content {
+	color:#aaa;
+	height:auto;
+	position: absolute;
+	top:7em;
+
+	width: 100%;
+
+}
+
+#login-buttons{
 	font-size: 4em;
+}
+
+#canvas {
+	margin-left: -2.25em;
+
 }

@@ -3,10 +3,12 @@
 
 <template name="MainLayout">
   <header>
-  <p>v0.1</p>
+    
+    <div class="head"></div>
 
 
-    <canvas id="canvas" width="1400px"></canvas>
+
+
 	<script src="/client/main.js"></script>
     <br>
         <!--{{> loginButtons}}
@@ -17,15 +19,21 @@
   </header>
 
 
-<main class="buttons">
+<main class="content">
     <br>
-    <ul>
-        <li><button class="btn-clients toggle-menu ">Client Zone</button></li>
-        <li><button class="btn-ameta toggle-menu">AMETA Academy</button></li>
-        <li><button class="btn-staff toggle-menu">Staff Zone</button></li>
+
+    <canvas id="canvas" width="1500"></canvas>
+    <ul id="front">
+        <li><button class="btn toggle-menu " id="client">Client Zone</button></li>
+        <li><button class="btn toggle-menu" id="ameta">AMETA Academy</button></li>
+        <li><button class="btn toggle-menu" id="staff">Staff Zone</button></li>
     </ul>
 
 </main>
+<footer>
+    <div class="foot"></div>
+  <div class="action"><h1>+</h1></div>
 
+</footer>
 
 </template>

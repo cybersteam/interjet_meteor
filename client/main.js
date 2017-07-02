@@ -6,10 +6,37 @@ import './layouts/main.html';
 //import '../imports/api/coursedates.js';
 
 //MainLayout template gets the method events - onclick logs to console
+// Template.MainLayout.events({
+//   'click .toggle-menu': function(){
+//     console.log('click');
+//     alert('Hey');
+//
+//   }
+// });
+Template.ClientLayout.events({
+  'click .action': function() {
+    FlowRouter.go('/ameta');
+
+  }
+});
+//THIS CALLS FlowRouter to go to another route e.g. /clientzone
 Template.MainLayout.events({
-  'click .toggle-menu': function(){
-    console.log('click');
-    alert('Hey');
+  'click #client': function() {
+    FlowRouter.go('/clientzone');
+
+  }
+});
+
+Template.MainLayout.events({
+  'click #ameta': function() {
+    FlowRouter.go('/ameta');
+
+  }
+});
+
+Template.MainLayout.events({
+  'click #staff': function() {
+    FlowRouter.go('/staffzone');
 
   }
 });
@@ -21,7 +48,7 @@ var img = new Image();
 // direction, and the speed.
 
 img.src = '/logo.png';
-var CanvasXSize = 1500;
+var CanvasXSize = 0;
 var CanvasYSize = 100;
 var speed = 30; //lower is faster
 var scale = 1.05;
@@ -38,6 +65,7 @@ var clearY;
 var ctx;
 
 img.onload = function() {
+    CanvasXSize = window.outerWidth;
     imgW = img.width*scale;
     imgH = img.height*scale;
     if (imgW > CanvasXSize) { x = CanvasXSize-imgW/2; } // image larger than canvas
